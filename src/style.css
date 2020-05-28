@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container
+{
+    padding: 1em;
+    width:100%; 
+    text-align: center;
+}
+.dropdown
+{
+    padding: 0.5em;
+   margin: 1em 0;
+   font-weight: 1.3em;
+   word-wrap: break-word;
+}
+.dropdown option{
+    word-wrap: break-word;
+}
+.flex
+{
+    min-height: 66vh;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box
+{
+    margin: 1em 0;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+.box.confirmed
+{
+    border: 1px solid rgb(243, 169, 135);
+    background: rgb(240, 170, 158);
+}
+
+.box.recoverd
+{
+    border: 1px solid rgb(46, 99, 11);
+    background: rgb(178, 226, 182);
+}
+
+.box.deaths
+{
+    border: 1px solid rgb(158, 19, 9);
+    background: rgb(212, 149, 149);
+}
+
+@media screen and (min-width: 900px)
+{
+    .flex{
+        flex-wrap: nowrap;
+    }
+    .box{
+        margin: 1em;
+        max-width: 300px;
+        line-height: 1.5;
+        font-size: 2em;
+    }
+}
